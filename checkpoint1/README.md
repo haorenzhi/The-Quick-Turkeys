@@ -1,8 +1,6 @@
 # Checkpoint 1
 
-For checkpoint 1, we looked at Relational Analysis and analyzed a couple of questions listed below.
-
-The SQL scripts can be foudn in the src folder with analysis of the results in findings.pdf where you can also find all the corresponding tables for the SQL queries. 
+The SQL scripts can be found in the src folder with analysis of the results in findings.pdf where you can also find all the corresponding tables for the SQL queries. 
 
 1. Which race is most commonly the subject of a TRR as compared to the racial composition of that neighborhood?
 
