@@ -11,6 +11,10 @@ inner join data_officer on data_officer.id = trr_trr.officer_id
 where subject_race is not null
 group by race, subject_race;
 
+
+/*
+Getting probability matrix for Chicago racial demographics vs Officer demographics
+*/
 create temp table allcops as (
 select race as officer_race,
        (count(data_officer.race) * 1.0),
