@@ -1,0 +1,2029 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "beat",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column beat using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_on_duty",
+    "expression": "grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_on_duty using expression grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_in_uniform",
+    "expression": "grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_in_uniform using expression grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_birth_year",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_birth_year using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_age",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_age using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_injured",
+    "expression": "grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_injured using expression grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subject_armed",
+    "expression": "grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_armed using expression grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subject_injured",
+    "expression": "grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_injured using expression grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subject_alleged_injury",
+    "expression": "grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_alleged_injury using expression grel:if(or(value==\"Yes\",value==\"Y\"), 1, 0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subject_age",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_age using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "subject_birth_year",
+    "expression": "value.toNumber()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_birth_year using expression value.toNumber()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_age",
+    "expression": "grel:if(value < 0, value*-1, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_age using expression grel:if(value < 0, value*-1, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_appointed_date",
+    "expression": "grel:value.toDate().toString(\"yyyy-MM-dd\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_appointed_date using expression grel:value.toDate().toString(\"yyyy-MM-dd\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trr_datetime",
+    "expression": "grel:value.toDate(\"yyyy-MM-dd hh:mm:ssX\").toString(\"yyyy-MM-dd hh:mm:ss a\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trr_datetime using expression grel:value.toDate(\"yyyy-MM-dd hh:mm:ssX\").toString(\"yyyy-MM-dd hh:mm:ss a\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_appointed_date",
+          "columnName": "officer_appointed_date",
+          "query": "redacted",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_appointed_date",
+    "expression": "grel:replace(value, \"REDACTED\", \"\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_appointed_date using expression grel:replace(value, \"REDACTED\", \"\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_birth_year",
+    "expression": "grel:if(value > 2021,value - 100, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_birth_year using expression grel:if(value > 2021,value - 100, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_birth_year",
+    "expression": "grel:if(and(value > 5, value < 100), value + 1900, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_birth_year using expression grel:if(and(value > 5, value < 100), value + 1900, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "range",
+          "name": "subject_birth_year",
+          "expression": "value",
+          "columnName": "subject_birth_year",
+          "from": 0,
+          "to": 1200,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_birth_year",
+    "expression": "grel:if(value < 5, value + 2000, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_birth_year using expression grel:if(value < 5, value + 2000, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "range",
+          "name": "subject_birth_year",
+          "expression": "value",
+          "columnName": "subject_birth_year",
+          "from": 100,
+          "to": 1200,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_birth_year",
+    "expression": "grel:if(and(value > 1000,value < 1100), value + 900,value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_birth_year using expression grel:if(and(value > 1000,value < 1100), value + 900,value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        },
+        {
+          "type": "range",
+          "name": "subject_birth_year",
+          "expression": "value",
+          "columnName": "subject_birth_year",
+          "from": 100,
+          "to": 1200,
+          "selectNumeric": true,
+          "selectNonNumeric": true,
+          "selectBlank": true,
+          "selectError": true
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_birth_year",
+    "expression": "grel:if((value / 10) == 19, value * 10, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_birth_year using expression grel:if((value / 10) == 19, value * 10, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_birth_year",
+    "expression": "grel:if(and(value > 1000, value < 1900), value%100 + 1900,value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_birth_year using expression grel:if(and(value > 1000, value < 1900), value%100 + 1900,value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_gender",
+    "expression": "grel:if(value == \"MALE\",\"M\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_gender using expression grel:if(value == \"MALE\",\"M\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_gender",
+    "expression": "grel:if(value ==\"FEMALE\",\"F\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_gender using expression grel:if(value ==\"FEMALE\",\"F\",value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_race",
+    "expression": "grel:if(value == \"UNKNOWN\", NULL, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_race using expression grel:if(value == \"UNKNOWN\", NULL, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_race",
+    "expression": "grel:if(value == \"UNKNOWN / REFUSED\", NULL, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_race using expression grel:if(value == \"UNKNOWN / REFUSED\", NULL, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_race",
+    "expression": "grel:if(or(value == \"AMER IND/ALASKAN NATIVE\", value == \"AMER INDIAN / ALASKAN NATIVE\"), \"NATIVE AMERICAN/ALASKAN NATIVE\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_race using expression grel:if(or(value == \"AMER IND/ALASKAN NATIVE\", value == \"AMER INDIAN / ALASKAN NATIVE\"), \"NATIVE AMERICAN/ALASKAN NATIVE\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_race",
+          "columnName": "officer_race",
+          "query": "",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "subject_race",
+    "expression": "grel:if(value == \"ASIAN / PACIFIC ISLANDER\",\"ASIAN/PACIFIC ISLANDER\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column subject_race using expression grel:if(value == \"ASIAN / PACIFIC ISLANDER\",\"ASIAN/PACIFIC ISLANDER\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "notify_oemc",
+    "expression": "grel:if(startsWith(value,\"Y\"),1,0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column notify_oemc using expression grel:if(startsWith(value,\"Y\"),1,0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "notify_district_sergeant",
+    "expression": "grel:if(startsWith(value,\"Y\"),1,0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column notify_district_sergeant using expression grel:if(startsWith(value,\"Y\"),1,0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "notify_op_command",
+    "expression": "grel:if(startsWith(value,\"Y\"),1,0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column notify_op_command using expression grel:if(startsWith(value,\"Y\"),1,0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "notify_det_division",
+    "expression": "grel:if(startsWith(value,\"Y\"),1,0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column notify_det_division using expression grel:if(startsWith(value,\"Y\"),1,0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "trr_created",
+    "expression": "grel:value.toDate(\"yyyy-MM-dd hh:mm:ssX\").toString(\"yyyy-MM-dd hh:mm:ss a\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column trr_created using expression grel:value.toDate(\"yyyy-MM-dd hh:mm:ssX\").toString(\"yyyy-MM-dd hh:mm:ss a\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_race",
+    "expression": "grel:if(value == \"UNKNOWN\",NULL, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_race using expression grel:if(value == \"UNKNOWN\",NULL, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_race",
+    "expression": "grel:if(value == \"AMER IND/ALASKAN NATIVE\",\"NATIVE AMERICAN/ALASKAN NATIVE\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_race using expression grel:if(value == \"AMER IND/ALASKAN NATIVE\",\"NATIVE AMERICAN/ALASKAN NATIVE\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "indoor_or_outdoor",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column indoor_or_outdoor using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(\" / \",\"/\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(\" / \",\"/\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Police Facility/vehicle Parking Lot",
+          "Police Facility/veh Parking Lot"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Police Facility/Veh Parking Lot"
+      },
+      {
+        "from": [
+          "Residence - Garage",
+          "Residence-garage"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Residence-Garage"
+      },
+      {
+        "from": [
+          "College/university - Grounds",
+          "College/university Grounds"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "College/university - Grounds"
+      },
+      {
+        "from": [
+          "School - Private Building",
+          "School, Private, Building"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "School - Private Building"
+      },
+      {
+        "from": [
+          "Residence - Porch/hallway",
+          "Residence Porch/hallway"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Residence - Porch/hallway"
+      },
+      {
+        "from": [
+          "Vehicle - Commercial",
+          "Vehicle-commercial"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Vehicle - Commercial"
+      },
+      {
+        "from": [
+          "Parking Lot/garage (non Residential)",
+          "Parking Lot/garage(non.Resid.)"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Parking Lot/garage (non Residential)"
+      }
+    ],
+    "description": "Mass edit cells in column location"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "School, Public, Grounds",
+          "School - Public Grounds"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "School, Public, Grounds"
+      },
+      {
+        "from": [
+          "School - Public Building",
+          "School, Public, Building"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "School, Public, Building"
+      }
+    ],
+    "description": "Mass edit cells in column location"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Other Railroad Property/train Depot",
+          "Other Railroad Prop/train Depot"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Other Railroad Prop / Train Depot"
+      }
+    ],
+    "description": "Mass edit cells in column location"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:if(value == \"Cha Hallway/stairwell/elevator\", \"Cha Hallway/Stairwell/Elevator\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:if(value == \"Cha Hallway/stairwell/elevator\", \"Cha Hallway/Stairwell/Elevator\",value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:if(value == \"Cha Parking Lot/grounds\", \"Cha Parking Lot/Grounds\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:if(value == \"Cha Parking Lot/grounds\", \"Cha Parking Lot/Grounds\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:if(value == \"Church/synagogue/place Of Worship\", \"Church/Synagogue/Place Of Worship\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:if(value == \"Church/synagogue/place Of Worship\", \"Church/Synagogue/Place Of Worship\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:if(value == \"College/university - Grounds\", \"College/University - Grounds\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:if(value == \"College/university - Grounds\", \"College/University - Grounds\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:if(value == \"Vacant Lot/land\", \"Vacant Lot/Land\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:if(value == \"Vacant Lot/land\", \"Vacant Lot/Land\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[a](?!\\s))/, \"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[a](?!\\s))/, \"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[b](?!\\s))/, \"B\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[b](?!\\s))/, \"B\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[c](?!\\s))/, \"C\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[c](?!\\s))/, \"C\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[o](?!\\s))/, \"O\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[o](?!\\s))/, \"O\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[g](?!\\s))/, \"G\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[g](?!\\s))/, \"G\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[m](?!\\s))/, \"M\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[m](?!\\s))/, \"M\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[p](?!\\s))/, \"P\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[p](?!\\s))/, \"P\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:value.replace(/(\\b[e](?!\\s))/, \"E\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression grel:value.replace(/(\\b[e](?!\\s))/, \"E\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[r](?!\\s))/, \"R\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[r](?!\\s))/, \"R\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[d](?!\\s))/, \"D\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[d](?!\\s))/, \"D\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[t](?!\\s))/, \"T\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[t](?!\\s))/, \"T\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[h](?!\\s))/, \"H\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[h](?!\\s))/, \"H\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:value.replace(/(\\b[f](?!\\s))/, \"F\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:value.replace(/(\\b[f](?!\\s))/, \"F\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/mass-edit",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "value",
+    "edits": [
+      {
+        "from": [
+          "Nursing/Retirement Home",
+          "Nursing Home/Retirement Home"
+        ],
+        "fromBlank": false,
+        "fromError": false,
+        "to": "Nursing Home/Retirement Home"
+      }
+    ],
+    "description": "Mass edit cells in column location"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:if(value == \"School - Private Building\", \"School, Private, Building\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:if(value == \"School - Private Building\", \"School, Private, Building\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:if(value == \"School - Private Grounds\", \"School, Private, Grounds\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:if(value == \"School - Private Grounds\", \"School, Private, Grounds\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:if(value == \"Residence - Porch/Hallway\", \"Residence Porch/Hallway\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:if(value == \"Residence - Porch/Hallway\", \"Residence Porch/Hallway\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "location",
+    "expression": "grel:if(value == \"Residence - Yard (Front/Back)\", \"Residence Yard (Front/Back)\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column location using expression grel:if(value == \"Residence - Yard (Front/Back)\", \"Residence Yard (Front/Back)\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:value.replace(/(\\d[t](?!\\s))/,\"T\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression grel:value.replace(/(\\d[t](?!\\s))/,\"T\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:value.replace(/(\\d[s](?!\\s))/,\"S\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression grel:value.replace(/(\\d[s](?!\\s))/,\"S\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:value.replace(/(\\d[r](?!\\s))/,\"R\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression grel:value.replace(/(\\d[r](?!\\s))/,\"R\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "street",
+    "expression": "grel:value.replace(/(\\d[n](?!\\s))/,\"N\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column street using expression grel:value.replace(/(\\d[n](?!\\s))/,\"N\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_first_name",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_first_name using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "officer_suffix_name",
+          "expression": "value",
+          "columnName": "officer_suffix_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "INERNEY",
+                "l": "INERNEY"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "list",
+          "name": "officer_suffix_name",
+          "expression": "value",
+          "columnName": "officer_suffix_name",
+          "invert": false,
+          "omitBlank": false,
+          "omitError": false,
+          "selection": [
+            {
+              "v": {
+                "v": "INERNEY",
+                "l": "INERNEY"
+              }
+            }
+          ],
+          "selectBlank": false,
+          "selectError": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "value.replace(/\\s+/,' ')",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression value.replace(/\\s+/,' ')"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(\" JR\", \"!JR\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(\" JR\", \"!JR\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(\" SR\", \"!SR\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(\" SR\", \"!SR\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(\" I\", \"!I\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(\" I\", \"!I\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(\" II\", \"!II\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(\" II\", \"!II\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(\" III\", \"!III\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(\" III\", \"!III\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(\" IV\", \"!III\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(\" IV\", \"!III\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(\" V\", \"!V\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(\" V\", \"!V\")"
+  },
+  {
+    "op": "core/column-split",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "guessCellType": true,
+    "removeOriginalColumn": true,
+    "mode": "separator",
+    "separator": "!",
+    "regex": false,
+    "maxColumns": 0,
+    "description": "Split column officer_last_name by separator"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name 2",
+    "expression": "grel:value.replace(\"JR.\", \"JR\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name 2 using expression grel:value.replace(\"JR.\", \"JR\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name 1",
+    "expression": "grel:if(value ==\"MC\", \"MC INERNEY\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name 1 using expression grel:if(value ==\"MC\", \"MC INERNEY\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name 2",
+    "expression": "grel:if(value ==\"INERNEY\", NULL, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name 2 using expression grel:if(value ==\"INERNEY\", NULL, value)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "officer_last_name 2",
+    "newColumnName": "officer_suffix_name",
+    "description": "Rename column officer_last_name 2 to officer_suffix_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name 1",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name 1 using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_race",
+    "expression": "value.toTitlecase()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_race using expression value.toTitlecase()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_race",
+    "expression": "grel:if(value == \"Native American/alaskan Native\", \"Native American/Alaskan Native\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_race using expression grel:if(value == \"Native American/alaskan Native\", \"Native American/Alaskan Native\", value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_race",
+    "expression": "grel:if(value == \"Asian/pacific Islander\", \"Asian/Pacific\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_race using expression grel:if(value == \"Asian/pacific Islander\", \"Asian/Pacific\", value)"
+  },
+  {
+    "op": "core/column-rename",
+    "oldColumnName": "officer_last_name 1",
+    "newColumnName": "officer_last_name",
+    "description": "Rename column officer_last_name 1 to officer_last_name"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_middle_initial",
+    "expression": "grel:if(value == \" \",NULL, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_middle_initial using expression grel:if(value == \" \",NULL, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_middle_initial",
+    "expression": "grel:if(value == \"REDACTED\",NULL, value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_middle_initial using expression grel:if(value == \"REDACTED\",NULL, value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_first_name",
+    "expression": "value.trim()",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_first_name using expression value.trim()"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_unit_name",
+    "expression": "grel:if(value == \"REDACTED\", \"\",value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_unit_name using expression grel:if(value == \"REDACTED\", \"\",value)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[s](?!\\s))/,\"S\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[s](?!\\s))/,\"S\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[h](?!\\s))/,\"H\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[h](?!\\s))/,\"H\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[b](?!\\s))/,\"B\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[b](?!\\s))/,\"B\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[g](?!\\s))/,\"G\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[g](?!\\s))/,\"G\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[v](?!\\s))/,\"V\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[v](?!\\s))/,\"V\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[j](?!\\s))/,\"J\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[j](?!\\s))/,\"J\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[w](?!\\s))/,\"W\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[w](?!\\s))/,\"W\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[o](?!\\s))/,\"O\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[o](?!\\s))/,\"O\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[c](?!\\s))/,\"C\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[c](?!\\s))/,\"C\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[a](?!\\s))/,\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[a](?!\\s))/,\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[l](?!\\s))/,\"L\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[l](?!\\s))/,\"L\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[m](?!\\s))/,\"M\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[m](?!\\s))/,\"M\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[r](?!\\s))/,\"R\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[r](?!\\s))/,\"R\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[f](?!\\s))/,\"F\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[f](?!\\s))/,\"F\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[a](?!\\s))/,\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[a](?!\\s))/,\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[b](?!\\s))/,\"B\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[b](?!\\s))/,\"B\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[m](?!\\s))/,\"M\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[m](?!\\s))/,\"M\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[c](?!\\s))/,\"C\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[c](?!\\s))/,\"C\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_last_name",
+          "columnName": "officer_last_name",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_last_name",
+    "expression": "grel:value.replace(/(\\b[d](?!\\s))/,\"D\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_last_name using expression grel:value.replace(/(\\b[d](?!\\s))/,\"D\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_first_name",
+          "columnName": "officer_first_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_first_name",
+    "expression": "grel:value.replace(/(\\b[f](?!\\s))/,\"F\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_first_name using expression grel:value.replace(/(\\b[f](?!\\s))/,\"F\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_first_name",
+          "columnName": "officer_first_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_first_name",
+    "expression": "grel:value.replace(/(\\b[m](?!\\s))/,\"M\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_first_name using expression grel:value.replace(/(\\b[m](?!\\s))/,\"M\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_first_name",
+          "columnName": "officer_first_name",
+          "query": "-",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_first_name",
+    "expression": "grel:value.replace(/(\\b[a](?!\\s))/,\"A\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_first_name using expression grel:value.replace(/(\\b[a](?!\\s))/,\"A\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [
+        {
+          "type": "text",
+          "name": "officer_first_name",
+          "columnName": "officer_first_name",
+          "query": "'",
+          "mode": "text",
+          "caseSensitive": false,
+          "invert": false
+        }
+      ],
+      "mode": "row-based"
+    },
+    "columnName": "officer_first_name",
+    "expression": "grel:value.replace(/(\\b[m](?!\\s))/,\"M\")",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_first_name using expression grel:value.replace(/(\\b[m](?!\\s))/,\"M\")"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "officer_unit_detail",
+    "expression": "grel:if(value == \"REDACTED\", \"\", value)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column officer_unit_detail using expression grel:if(value == \"REDACTED\", \"\", value)"
+  }
+]
