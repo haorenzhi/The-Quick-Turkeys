@@ -24,6 +24,7 @@ Run sql queries in DataC&I_3_1_trrstatus.sql in order. It may take up to 30  min
 
 
 Linking the Police Unit IDs (3.2): 
+
 Linking data of unit_id and unit_detail_id:
 Use the trr_trr_refresh table modified in 3.1, run sql queries in DataC&I_3_2_Linking.sql in order.
 Then you will get the correct officer_unit_id and officer_unit_detail_id in trr_trr_refresh.
