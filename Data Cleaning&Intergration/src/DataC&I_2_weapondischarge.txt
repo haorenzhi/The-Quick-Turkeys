@@ -1,0 +1,28 @@
+[
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "firearm_reloaded",
+    "expression": "grel:if(startsWith(value,\"Y\"),1,0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column firearm_reloaded using expression grel:if(startsWith(value,\"Y\"),1,0)"
+  },
+  {
+    "op": "core/text-transform",
+    "engineConfig": {
+      "facets": [],
+      "mode": "row-based"
+    },
+    "columnName": "sight_used",
+    "expression": "grel:if(startsWith(value,\"true\"),1,0)",
+    "onError": "keep-original",
+    "repeat": false,
+    "repeatCount": 10,
+    "description": "Text transform on cells in column sight_used using expression grel:if(startsWith(value,\"true\"),1,0)"
+  }
+]
