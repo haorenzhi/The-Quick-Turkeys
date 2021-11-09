@@ -27,7 +27,7 @@
             "translate(" + margin.left + "," + margin.top + ")");
     
     //Read the data
-    d3.csv("https://raw.githubusercontent.com/LYuan22/teststuff/master/data/asdf.csv", function(data) {
+    d3.csv("https://raw.githubusercontent.com/haorenzhi/The-Quick-Turkeys/main/checkpoint3/data/heatmapData.csv", function(data) {
       console.log(data)
       // Labels of row and columns -> unique identifier of the column called 'subjectRace' and 'officerRace'
       var mysubjectRaces = d3.map(data, function(d){return d.subjectRace;}).keys()
