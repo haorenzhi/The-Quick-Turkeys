@@ -1,0 +1,26 @@
+officerRace,subjectRace,value
+Black,Black,2.0503
+Black,White,0.0961
+Black,Hispanic,0.0105
+Black,Asian,0.0552
+Black,Other,0.0108
+White,Black,2.2791
+White,White,0.3422
+White,Hispanic,0.4829
+White,Asian,0.1212
+White,Other,0.4877
+Hispanic,Black,3.5117
+Hispanic,White,0.4387
+Hispanic,Hispanic,1.0264
+Hispanic,Asian,0.1219
+Hispanic,Other,0.0719
+Asian,Black,3.7843
+Asian,White,0.7230
+Asian,Hispanic,1.1159
+Asian,Asian,0.4144
+Asian,Other,0.0940
+Native American,Black,5.5073
+Native American,White,0.7287
+Native American,Hispanic,1.0925
+Native American,Asian,0
+Native American,Other,0
