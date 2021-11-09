@@ -8,10 +8,3 @@ select count(*)
 as number_of_trr
 from trr_trr
 
-
-
-
-
-
-
-
