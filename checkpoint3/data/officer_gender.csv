@@ -1,3 +1,4 @@
-M,F,""
-29150,6372,23
-0.8201,0.1793,0.0006
+gender,number_of_officer,proportion_of_officer
+M,29150,0.8201
+F,6372,0.1793
+"",23,0.0006
