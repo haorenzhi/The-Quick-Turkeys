@@ -150,7 +150,7 @@ ADD officer_id INT;
 UPDATE trr_trrstatus_refresh_9
 SET officer_suffix_name='JR'
 WHERE officer_suffix_name='JR.';
-
+/*
 UPDATE trr_trrstatus_refresh_9 a
 SET officer_id=b.id
 FROM data_officer b
@@ -170,7 +170,7 @@ OR a.officer_race IS NULL THEN 1 ELSE 0 END
 OR a.officer_appointed_date IS NULL THEN 1 ELSE 0 END
 + CASE WHEN a.officer_birth_year=b.birth_year
 OR a.officer_birth_year IS NULL THEN 1 ELSE 0 END) >6;
-
+*/
 ALTER TABLE trr_trrstatus_refresh_9
 DROP COLUMN officer_first_name,
 DROP COLUMN officer_middle_initial,
