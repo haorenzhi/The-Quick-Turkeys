@@ -237,7 +237,7 @@ WHERE trr_report_id NOT IN (SELECT id FROM trr_trr_refresh);
 
 DELETE FROM trr_trrstatus_refresh_9
 WHERE trr_report_id NOT IN (SELECT id FROM trr_trr_refresh);
---7
+--6
 ALTER TABLE trr_trr_refresh_9
 ADD CONSTRAINT trr_trrPrimaryKey PRIMARY KEY (id);
 
