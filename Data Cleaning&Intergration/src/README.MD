@@ -20,7 +20,6 @@ Once the sql queries are done running, you should get 6 CSV files in output/ dir
 Open trr-trr.csv in openrefine and create a project.
 Click Undo/Redo -> Apply and paste the json history from DataC&I_3_trr.txt.
 Export the modified data as new trr-trr.csv.
-
 Open trr-trrstatus.csv in openrefine and create a project.
 Click Undo/Redo -> Apply and paste the json history from DataC&I_3_trrstatus.txt.
 Export the modified data as new trr-trrstatus.csv.
