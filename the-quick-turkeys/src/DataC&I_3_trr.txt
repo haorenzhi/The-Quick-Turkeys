@@ -1,0 +1,14 @@
+[
+  {
+    "op": "core/column-move",
+    "columnName": "crid",
+    "index": 1,
+    "description": "Move column crid to position 1"
+  },
+  {
+    "op": "core/column-move",
+    "columnName": "point",
+    "index": 32,
+    "description": "Move column point to position 32"
+  }
+]

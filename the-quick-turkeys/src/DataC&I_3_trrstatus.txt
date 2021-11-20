@@ -1,0 +1,8 @@
+[
+  {
+    "op": "core/column-move",
+    "columnName": "trr_id",
+    "index": 5,
+    "description": "Move column trr_id to position 5"
+  }
+]
