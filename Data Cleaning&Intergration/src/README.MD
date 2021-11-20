@@ -3,7 +3,7 @@ For Data Cleaning (Type Correction and Reconciliation):
 Connect to postgres in Openrefine.
 Select all contents from tables trr_trr_refresh, trr_weapondischarge_refresh, trr_trrstatus_refresh and trr_subjectweapon_refresh separately(Create an Openrefine project for each of the tables).
 In each project, click Undo/Redo -> Apply and paste the json history from the corresponding text file (For example, DataC&I_2_trr.txt corresponds trr_trr_refresh, DataC&I_2_trrstatus.txt corresponds trr_trrstatus_refresh).
-Export the modified data as CSV files.
+Export the modified data as CSV files named trr_trr_refresh.csv, trr_trrstatus_refresh.csv, trr_subjectweapon_refresh.csv and trr_weapondischarge_refresh.csv. Put these CSV files in src/temp directory.
 
 
 For Data Integration:
