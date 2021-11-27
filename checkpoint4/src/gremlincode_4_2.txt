@@ -1,0 +1,18 @@
+graph = TinkerGraph.open()
+g = traversal().withEmbedded(graph)
+new File("C:\\MSCE\\CS496\\checkpoint4\\apache-tinkerpop-gremlin-console-3.5.1\\bin\\officer_trr.txt").eachLine {
+    (officerid, trrnumber) = it.split('\t')
+    g.addV("officer").property(id,officerid).property("trrNumber",trrnumber).next()
+}
+
+new File('C:\\MSCE\\CS496\\checkpoint4\\apache-tinkerpop-gremlin-console-3.5.1\\bin\\officer_beat_distinct.txt').eachLine {
+    (officeridfrom, officeridto) = it.split('\t')
+    vfrom=g.V(officeridfrom).next()
+    vto=g.V(officeridto).next()
+    g.addE("beat").from(vfrom).to(vto).next()
+}
+
+:plugin use tinkerpop.gephi
+graph = TinkerFactory.createModern()
+:remote connect tinkerpop.gephi
+:> graph
