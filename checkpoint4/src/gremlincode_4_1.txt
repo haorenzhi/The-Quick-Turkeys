@@ -1,0 +1,23 @@
+:plugin use tinkerpop.gephi
+
+graph = TinkerGraph.open()
+
+graph.createIndex('officerID', Vertex.class)
+
+g = traversal().withEmbedded(graph)
+
+new File("C:\\Users\\Lucas Yuan\\Downloads\\CS 396 - Data Science Seminar\\officer_trr.txt").eachLine {
+    (officerid, trrnumber) = it.split('\t')
+    g.addV("officer").property(id,officerid).property("trrNumber",trrnumber).next()
+}
+
+new File('C:\\Users\\Lucas Yuan\\Downloads\\CS 396 - Data Science Seminar\\edges.csv').eachLine {
+   (fromVertex, toVertex) = it.split('\t')
+   vfrom = g.V(fromVertex).next()
+   vto = g.V(toVertex).next()
+   g.addE('TRR').from(vfrom).to(vto).next()
+}
+
+:remote connect tinkerpop.gephi
+:> clear
+:> graph
