@@ -2,4 +2,4 @@
 
 Open checkpoint4_2.gephi in Gephi and you will see the graph of officers assigned in same beats.
 
-Code using sequence for reproducing: checkpoint4_2_1.sql, CS496_cp4.py, checkpoint4_2_2.sql, gremlincode_4_2.txt.
+Code using sequence for reproducing: checkpoint4_2_1.sql, checkpoint4_2_2.py, checkpoint4_2_3.sql, gremlincode_4_2.txt.
