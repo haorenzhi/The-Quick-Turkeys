@@ -1,4 +1,4 @@
-4_1 Are there clusters of 
+4_1 Are there clusters of officers that account for a large amount of TRRs?
 
 Open checkpoint4_1.gephi in Gephi to see the graph of officers that have shared trrs
 
