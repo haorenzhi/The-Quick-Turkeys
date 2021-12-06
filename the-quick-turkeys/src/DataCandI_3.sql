@@ -321,3 +321,5 @@ RENAME COLUMN trr_report_id TO trr_id;
 \copy trr_charge_refresh_9 TO '../output/trr-charge.csv' CSV HEADER
 
 \set ON_ERROR_STOP off
+
+
