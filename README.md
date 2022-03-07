@@ -8,7 +8,7 @@ A allegation analysis project based on CPDB(Chicago Police Data Base).
 
 -Interactive Visualization
 
--Data Cleaning and Intergration
+-Data Cleaning and Integration
 
 -Graph Nnalysis
 
