@@ -2,7 +2,7 @@
  
 A allegation analysis project based on CPDB(Chicago Police Data Base).
 
--Relational Nnalysis
+-Relational Analysis
 
 -Data Exploration
 
@@ -10,7 +10,7 @@ A allegation analysis project based on CPDB(Chicago Police Data Base).
 
 -Data Cleaning and Integration
 
--Graph Nnalysis
+-Graph Analysis
 
 -Natural Language Processing on Sentimental Analysis
 
